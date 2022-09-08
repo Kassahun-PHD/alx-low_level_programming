@@ -1,4 +1,5 @@
 #include <stdio.h>
+
 /**
  * main - the start of main function
  *
@@ -6,11 +7,11 @@
  */
 int main(void)
 {
-char a;
-int b;
-long int c;
-long long int d;
-float e;
+	char a;
+	int b;
+	long int c;
+	long long int d;
+	float e;
 
 	printf("Size of a char:%lu bytes", (unsigned long)sizeof(a));
 	printf("Size of a int:%lu bytes", (unsigned long)sizeof(b));
