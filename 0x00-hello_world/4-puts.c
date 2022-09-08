@@ -1,8 +1,8 @@
 #include <stdio.h>
 /**
- * main fuction
+ *main -Entry fuction
  *
- *Retuns 0 at the end
+ *Retun: retun 0 the end
  */
 int main(void)
 {       char Str[] = "\"Programming is like building a multilingual puzzle";
