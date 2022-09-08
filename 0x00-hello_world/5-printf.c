@@ -5,6 +5,7 @@
  * Return: returns 0 at the end
  */
 int main(void)
-{ printf("with proper grammar, but the outcome is a piece of art,");
+{ char str[] = "with proper grammar, but the outcome is a piece of art,";
+	printf("%c ", str);
 	return (0);
 }
