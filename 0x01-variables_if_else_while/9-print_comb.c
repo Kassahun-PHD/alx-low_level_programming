@@ -7,15 +7,14 @@
  */
 int main(void)
 {
-	char ch = 0;
+	int ch = 0;
+
 	/*Write the Character to stdout*/
 	for (ch = '0'; ch <= '9'; ch++)
 	{
 		putchar(ch);
 		if (ch <= '8')
-		{
-			putchar(',');
-		}
+		putchar(',');
 		else
 		{
 			putchar('$');
