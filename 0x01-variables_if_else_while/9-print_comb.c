@@ -14,12 +14,12 @@ int main(void)
 	{
 		putchar(ch);
 		if (ch <= '8')
-		putchar(',');
-		else
 		{
-			putchar('$');
-			putchar('\n');
+			putchar(',');
+			putchar(' ');
 		}
+		else
+			putchar('\n');
 	}
 	return (0);
 }
