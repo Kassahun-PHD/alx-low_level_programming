@@ -11,6 +11,5 @@ int main(void)
 
 	fwrite(str, 1, sizeof(str), stderr);
 	fflush(stderr);
-	fclose(stderr);
 	return (1);
 }
