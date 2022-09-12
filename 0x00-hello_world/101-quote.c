@@ -1,14 +1,17 @@
 #include <stdio.h>
-#include <stdlib.h>
-
+#include <ctype.h>
 /**
  * main - the start of main function
  *
- * Return: returns 1 at the end
+ * Return: returns 0 at the end
  */
 int main(void)
 {
-	write(STDOUT_FILENO, "and that piece of art is useful
-			\" - Dora Korpar, 2015-10-19\n", 59);
+	char str[] = "and that piece of art is useful\" - Dora Korpar, 2015-10-19";
+	
+	fwrite(str , 1 , sizeof(str) , stdout );
+	fflush(stdout);
+	fclose(stdout);
+	
 	return (1);
 }
