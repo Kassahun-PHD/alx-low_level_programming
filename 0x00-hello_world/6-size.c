@@ -1,5 +1,4 @@
 #include <stdio.h>
-
 /**
  * main - the start of main function
  *
