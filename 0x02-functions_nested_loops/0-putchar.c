@@ -1,17 +1,17 @@
 #include <unistd.h>
-#include <stdio.h>
-int _putchar(char c);
+#include "main.h"
+
 /**
- * main - The main function definiition
- * Description: It prints the _putchar, followed by a new line.
+ * main - Check description
+ * Description: It prints the word _putchar, followed by a new line.
  * Return: 0.
  */
 int main(void)
 {
-	char str[8] = "_purchar";
+	char str[8] = "_putchar";
 	int i;
 
-	for (i = 0; i < 8; i++)
+	for (i = 0; i < 9; i++)
 		_putchar(str[i]);
 	_putchar('\n');
 
