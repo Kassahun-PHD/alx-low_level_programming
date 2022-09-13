@@ -8,14 +8,13 @@
  */
 int main(void)
 {
-        char al = 'a';
+	char al = 'a';
 
 	while (al <= 'z')
 	{
 		_putchar(al);
 		al++;
 	}
-        _putchar('\n');
-
-        return (0);
+	_putchar('\n');
+	return (0);
 }
