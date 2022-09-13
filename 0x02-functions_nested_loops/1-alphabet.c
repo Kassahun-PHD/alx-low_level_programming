@@ -4,9 +4,9 @@
 /**
  * main - Check description
  * Description: It prints the alphabeltes in lowercase, followed by a new line.
- * Return: 0.
+ * Return: No return type
  */
-int main(void)
+void print_alphabet(void)
 {
 	char al = 'a';
 
@@ -16,5 +16,4 @@ int main(void)
 		al++;
 	}
 	_putchar('\n');
-	return (0);
 }
