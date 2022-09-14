@@ -7,32 +7,30 @@
  * Description: function prints times_table of 9
  * Return: nothing
  */
-void main(int n)
+void print_to_98(int n)
 {
-	int i;
-	if (n < 98)
+	if (n <= 98)
 	{
-		for (i = n; i <= 98; i++)
+		for (; n <= 98; n++)
 		{
-			_putchar((i / 10) + '0');
-			_putchar((i % 10) + '0');
-			if (i == 98)
+			printf("%d", n);
+
+			if (n == 98)
 				continue;
-			_putchar(',');
-			_putchar(' ');
+			printf(", ");
 		}
+		printf("\n");
 	}
 	else
 	{
-		for (i = n; i <= 98; i--)
-                {
-			_putchar((i / 10) + '0');
-			_putchar((i % 10) + '0');
-			if (i == 98)
+		for (; n >= 98; n--)
+		{
+			printf("%d", n);
+
+			if (n == 98)
 				continue;
-			_putchar(',');
-			_putchar(' ');
+			printf(", ");
 		}
+		printf("\n");
 	}
-	_putchar('\n');
 }
