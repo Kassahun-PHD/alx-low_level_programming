@@ -2,37 +2,39 @@
 #include "main.h"
 
 /**
- * print_to_98 - prints times_table of 9
- * @n: initial number
- * Description: function prints times_table of 9
+ * print_to_98 - prints a sequence of numbers
+ * @n : initial numbers
+ * Description: function prints every minute in one day
  * Return: nothing
  */
 void print_to_98(int n)
 {
 	int i;
 
-	if (n <= 98)
+	if (n < 98)
 	{
 		for (i = n; i <= 98; i++)
 		{
-			printf("%d", i);
-
+			_putchar(i / 10);
+			_putchar((i % 10) + '0');
 			if (i == 98)
 				continue;
-			printf(", ");
+			_putchar(',');
+			_putchar(' ');
 		}
-		printf("\n");
+		_putchar('\n');
 	}
 	else
 	{
-		for (i = n; i >= 98; n--)
+		for (i = n; i >= 98; i--)
 		{
-			printf("%d", i);
-
+			_putchar(i / 10);
+			_putchar((i % 10) + '0');
 			if (i == 98)
 				continue;
-			printf(", ");
+			_putchar(',');
+			_putchar(' ');
 		}
-		printf("\n");
+		_putchar('\n');
 	}
 }
