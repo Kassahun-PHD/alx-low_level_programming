@@ -3,50 +3,48 @@
 
 /**
  * print_times_table - prints a print_times_table
- * @n : size of a table 
+ * @n: size of a table
  * Description: function prints every minute in one day
  * Return: nothing
  */
 void print_times_table(int n)
 {
-	int row;
-	int column;
-	int product;
+	int i, j, p;
 
-if (n >= 0 && n <= 15)
-{
-	for (row = 0; row <= n; row++)
+	if (n > 0 && n < 15)
 	{
-		for (column = 0; column <= n; column++)
+		for (i = 0; i <= n; i++)
 		{
-			product = (row * column);
-			if (column == 0)
-
-				_putchar('0' + product);
-			else
+			_putchar('0');
+			for (j = 1; j <= n; j++)
 			{
-				_putchar(',');
-				_putchar(' ');
-				if (product <= 9)
+				p = i * j;
+				if (p <= 9)
 				{
+					_putchar(',');
 					_putchar(' ');
 					_putchar(' ');
-					_putchar('0' + product);
+					_putchar(' ');
+					_putchar(p + '0');
 				}
-				else if (product > 9 && product < 100)
+				else if (p > 9 && p <= 99)
 				{
+					_putchar(',');
 					_putchar(' ');
-					_putchar('0' + (product / 10));
-					_putchar('0' + (product % 10));
+					_putchar(' ');
+					_putchar(p / 10 + '0');
+					_putchar(p % 10 + '0');
 				}
-				else if (product >= 100)
+				else
 				{
-					_putchar('0' + (product / 100));
-					_putchar('0' + ((product / 10) % 10));
-					_putchar('0' + (product % 10));
+					_putchar(',');
+					_putchar(' ');
+					_putchar(p / 100 + '0');
+					_putchar(p / 10 % 10 + '0');
+					_putchar(p % 10 + '0');
 				}
 			}
-		}
 			_putchar('\n');
+		}
 	}
-}  
+}
