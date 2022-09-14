@@ -22,28 +22,44 @@ void print_to_98(int n)
 	{
 		for (i = n; i >= 98; i--)
 		{
-			_puchar ((i / 100) + '0');
-			_putchar((i / 10)  + '0');
-			_putchar((i % 10) + '0');
-			if (i == 98)
-				continue;
-			_putchar(',');
-			_putchar(' ');
+			if (i >= 100)
+			{
+				_putchar(i / 100 + '0');
+				_putchar(i / 10 % 10 + '0');
+				_putchar(i % 10 + '0');
+				_putchar(',');
+				_putchar(' ');
+			}
+			else
+			{
+				_putchar(i / 10 % 10 + '0');
+				_putchar(i % 10 + '0');
+				if (i == 98)
+					continue;
+				_putchar(',');
+				_putchar(' ');
+			}
 		}
-		_putchar('\n');
 	}
-	else if (n < 0 && n < 98)
+	else if (n >= 0 && n <= 98)
 	{
-		for (i = n; i >= 98; i++)
+		for (i = n; i <= 98; i++)
 		{
-			_putchar((i / 100) + '0');
-			_putchar((i / 10) + '0');
-			_putchar((i % 10) + '0');
-			if (i == 98)
-				continue;
-			_putchar(',');
-			_putchar(' ');
+			if (i >= 0 && i <= 9)
+			{
+				_putchar(i + '0');
+				_putchar(',');
+				_putchar(' ');
+			}
+			else
+			{
+				_putchar(i / 10 + '0');
+				_putchar(i % 10 + '0');
+				if (i == 98)
+					continue;
+				_putchar(',');
+				_putchar(' ');
+			}
 		}
-		_putchar('\n');
 	}
 }
