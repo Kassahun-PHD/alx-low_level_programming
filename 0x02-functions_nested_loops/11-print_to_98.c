@@ -13,10 +13,12 @@ void print_to_98(int n)
 
 	if (n == 98)
 	{
+		i = n;
+
 		_putchar ((i / 10) + '0');
 		_putchar ((i % 10) + '0');
 	}
-	else if (i > 98 && i <= 111)
+	else if (n > 98 && n <= 111)
 	{
 		for (i = n; i >= 98; i--)
 		{
