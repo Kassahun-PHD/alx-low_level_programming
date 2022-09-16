@@ -1,3 +1,4 @@
+#include <stdio.h>
 #include "main.h"
 /**
  * print_integer - A function to priting n
@@ -6,7 +7,7 @@
  */
 void print_integer(int m)
 {
-	int i = 1000000000;
+	int i = 10000;
 
 	if (m > 0)
 	{
