@@ -10,7 +10,7 @@ int _isupper(int c)
 	char upper;
 	int isupper;
 
-	for (upper = 'A'; upper <= 'Z'; upper++)
+	for (upper = 65; upper <= 90; upper++)
 	{
 		if (c == upper)
 		{
