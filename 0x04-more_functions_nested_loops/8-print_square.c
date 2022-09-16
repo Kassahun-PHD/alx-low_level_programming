@@ -1,5 +1,5 @@
 #include <stdio.h>
-#inlcude "main.h"
+#include "main.h"
 
 /**
  * print_square - Write a function that prints a square,
