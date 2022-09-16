@@ -16,7 +16,7 @@ void print_integer(int m)
 			_putchar((m / i) % 10 + '0');
 		}
 	}
-	if (m == 0)
+	else if (m == 0)
 	{
 		_putchar(m + '0');
 	}
