@@ -10,13 +10,16 @@ int _isupper(int c)
 	int upper;
 	int isupper = 0;
 
-	for (upper = 65; upper <= 90; upper++)
+	upper = 'A';
+	while (upper <= 'Z')
 	{
 		if (c == upper)
 		{
 			isupper = 1;
 			break;
 		}
+		upper++;
+	}
 
 	return (isupper);
 }
