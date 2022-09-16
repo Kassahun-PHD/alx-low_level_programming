@@ -11,8 +11,8 @@ int _isupper(int c)
 	int upper;
 	int isupper = 0;
 
-	upper = 65;
-	while (upper <= 90)
+	upper = 'A';
+	while (upper <= 'Z')
 	{
 		if (c == upper)
 		{
