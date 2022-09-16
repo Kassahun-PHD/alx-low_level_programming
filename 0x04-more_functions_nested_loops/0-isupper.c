@@ -7,7 +7,7 @@
  */
 int _isupper(int c)
 {
-	char upper;
+	int upper;
 	int isupper;
 
 	for (upper = 65; upper <= 90; upper++)
