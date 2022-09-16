@@ -8,7 +8,7 @@
 int _isupper(int c)
 {
 	int upper;
-	int isupper;
+	int isupper = 0;
 
 	for (upper = 65; upper <= 90; upper++)
 	{
@@ -17,13 +17,6 @@ int _isupper(int c)
 			isupper = 1;
 			break;
 		}
-		else
-		{
-			isupper = 0;
-			break;
-		}
-		
-	}
 
 	return (isupper);
 }
