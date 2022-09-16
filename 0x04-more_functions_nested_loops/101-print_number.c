@@ -2,14 +2,6 @@
 #include "main.h"
 
 /**
- * print_integer - A function to printing an integer
- * @m: an input unsigned integer
- * Return: Nothing
- */
-void print_integer(int m)
-void print_integer(int m);
-
-/**
  * print_number - a function that prints an integer.
  * @n: An input integer
  * Return: Nothing
