@@ -1,3 +1,5 @@
+#include <stdio.h>
+#include "main.h"
 /**
  * *_strncat - a function of strings
  * @dest: the first string

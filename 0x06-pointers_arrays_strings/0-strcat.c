@@ -1,3 +1,5 @@
+#include <stdio.h>
+#include "main.h"
 /**
  * *_strcat - a function of char
  * @dest: the frist string

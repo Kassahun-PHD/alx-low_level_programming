@@ -1,3 +1,5 @@
+#include <stdio.h>
+#include "main.h"
 /**
  * reverse_array - a fucntion that reverses a string
  * @a: the first string
